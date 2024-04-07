@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Raquel Lugo Vecchini - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Raquel Lugo Vecchini
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          rlugoven@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Raquel Lugo Vecchini! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a Computer Science professor at the UIPR at the Ponce Campus. 
+            I have been working at this educational institution for 22 consecutive years. 
+            I have a doctorate in Education with a Specialization in Learning Technology. 
+            I am currently completing the Full Stack Development certification to bring that knowledge to my students.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>15 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="html_finalprojimages/CC++.png"/>
+            <h6>C and C++</h6>
+            <p>22 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/sql.jpg"/>
+            <h6>SQL</h6>
+            <p>15 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/cf.jpg"/>
+            <h6>Forensic Computer</h6>
+            <p>17 years experience</p>
+        </div>  
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Web-Page Educational</h3>
+            <ul>
+              <li>This website was built with the purpose of educating children and young people in the basic concepts in the field of computers for free.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Digital Book</h3>
+            <ul>
+              <li>This book was developed for children between 5 and 10 years old to educate them about the dangers that exist with websites and mobile applications.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Task Manager</h3>
+            <ul>
+              <li>Task manager is one of the most required applications for keeping track of daily activities and scheduling them accordingly. This also helps them to become more organized and productive throughout the day which can be a great help for people who lack the skill of time management.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Raquel is an educator who learns very quickly and quickly understands concepts. 
+          She has a great attitude and is an excellent team player. 
+          He has a curious mind and asks the right question. Sometimes he performs the task of leading assigned projects.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Raquel has been a fantastic experience. 
+          Has knowledge and experience in most tasks assigned to him and takes his own initiative to further develop those projects. 
+          He has great creativity. I recommend it 100%.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I worked together with Raquel during the various stages of developing a Web Site. 
+          She is a great resource, committed to successfully completing assigned tasks and assisting others in their tasks. 
+          She is an excellent companion. He will be an asset to any organization!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()" onclick="recommend_btn">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable / 11:06 AM-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
